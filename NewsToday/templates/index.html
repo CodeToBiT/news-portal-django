@@ -1,0 +1,104 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Slider Section -->
+
+<div class="headings">
+    <div class="container grid main-grid">
+        <div id="slider" class="main">
+            <figure>
+                <div class="slider-news slider-news-1">
+                    <a href="">This is a news title 1</a>
+                </div>
+                <div class="slider-news slider-news-2">
+                    <a href="">This is a news title 2 </a>
+                </div>
+                <div class="slider-news slider-news-3">
+                    <a href="">This is a news title 3 </a>
+                </div>
+                <div class="slider-news slider-news-4">
+                    <a href="">This is a news title 4</a>
+                </div>
+            </figure>
+        </div>
+        <div class="news1 main news">
+            <a href="">This is a news article</a>
+        </div>
+        <div class="news2 main news">
+            <a href="">This is a news article</a>
+        </div>
+    </div>
+</div>
+
+<!-- Latest News Section -->
+
+<div class="headings">
+    <div class="container post">
+        <h2>Latest News</h2>
+        <div class="flex latest-news">
+            <div>
+                    <a href=""><img src="{% static 'images/latest-1.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a latest news title 1.</a></h4>
+                    <p>Description for the latest news post 1.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-2.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a latest news title 2.</a></h4>
+                    <p>Description for the latest news post 2.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-3.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a latest news title 3.</a></h4>
+                    <p>Description for the latest news post 3.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-4.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a latest news title 4.</a></h4>
+                    <p>Description for the latest news post 4.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-5.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a latest news title 5.</a></h4>
+                    <p>Description for the latest news post 5.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured -->
+<div class="headings">
+    <div class="container post">
+        <h2>Featured News</h2>
+        <div class="flex latest-news">
+            <div>
+                    <a href=""><img src="{% static 'images/latest-1.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a featured news title 1.</a></h4>
+                    <p>Description for the featured news post 1.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-2.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a featured news title 2.</a></h4>
+                    <p>Description for the featured news post 2.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-3.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a featured news title 3.</a></h4>
+                    <p>Description for the featured news post 3.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-4.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a featured news title 4.</a></h4>
+                    <p>Description for the featured news post 4.</p>
+            </div>
+            <div>
+                <a href=""><img src="{% static 'images/latest-5.jpg' %}" alt=""></a>
+                    <h4><a href="#">This is a featured news title 5.</a></h4>
+                    <p>Description for the featured news post 5.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

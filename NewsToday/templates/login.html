@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    <title>
+        {% if title %}
+        {{ title }}
+        {% else %}
+        NewsToday
+        {% endif %}
+    </title>
+
+<body>
+    {% block content %}
+    <section class="login">
+        <div class="container">
+
+            <div class="contact-form card">
+
+                <a href="{% url 'index' %}">
+                    <h1 class="logo">NewsToday.</h1>
+                </a>
+                <h2>Log in to your account</h2>
+                <h4 class="signup-a">Don't have an account? <a href="{% url 'signup' %}">Sign up.</a></h4>
+                <form>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email Address*" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="password" placeholder="Password*" required>
+                    </div>
+                    <input type="submit" value="Log In" class="btn">
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    {% endblock %}
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="container flex">
+            <p>Copyright &#169; 2022 All Rights Reserved | <a href="{% url 'index' %}">NewsToday</a></p>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
