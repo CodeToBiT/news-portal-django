@@ -482,7 +482,23 @@ textarea {
     height: 500px;
 }
 
+/* About Us Page */
 
+.about-us h1{
+    font-size: 40px;
+}
+
+.about-us h4{
+    font-size: 30px;
+}
+
+.about-us p{
+    font-size: 20px;
+}
+
+.about-us{
+    min-height: 600px;
+}
 
 /* Utilities */
 
@@ -558,21 +574,21 @@ textarea {
 /* Margins */
 
 .my-1{
-    margin-top: 1px;
+    margin-top: 1rem;
 }
 
 .my-2{
-    margin-top: 2px;
+    margin-top: 2rem;
 }
 
 .my-3{
-    margin-top: 3px;
+    margin-top: 3rem;
 }
 
 .my-4{
-    margin-top: 4px;
+    margin-top: 4rem;
 }
 
 .my-5{
-    margin-top: 5px;
+    margin-top: 5rem;
 }

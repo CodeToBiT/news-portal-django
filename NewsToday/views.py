@@ -10,13 +10,13 @@ def index(request):
 
 def contact(request):
     content={
-        'title' : "Contact"
+        'title' : "Contact Us"
     }
     return render (request, 'contact.html', content)
 
 def about(request):
     content={
-        'title' : "About"
+        'title' : "Learn more about NewsToday"
     }
     return render (request, 'about.html', content)
 
